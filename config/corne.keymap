@@ -11,8 +11,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            /* BÍ QUYẾT CHỐNG LỖI: Yêu cầu phải ngừng gõ 150ms trước khi phím được tính là Modifier. 
-               Nếu bạn gõ lướt các phím liên tục, nó sẽ luôn hiểu là gõ chữ thông thường. */
             require-prior-idle-ms = <150>; 
             bindings = <&kp>, <&kp>;
         };
@@ -23,15 +21,15 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
-            // | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  D  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
+            // |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
+            // | CTRL |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E  |  I  |  O  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
-   &kp TAB   &kp Q        &kp W       &kp F        &kp P         &kp B         &kp J &kp L         &kp U        &kp Y       &kp SEMI     &kp BSPC
-   &kp LCTRL &hm LGUI A   &hm LALT R  &hm LCTRL S  &hm LSHIFT T  &kp G         &kp M &hm RSHIFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O   &kp SQT
-   &kp LSHFT &kp Z        &kp X       &kp C        &kp V         &kp D         &kp K &kp H         &kp COMMA    &kp DOT     &kp FSLH     &kp ESC
-                                      &kp LGUI     &mo 1         &kp SPACE     &kp RET  &mo 2 &kp RALT
+   &kp TAB   &kp Q         &kp W        &kp F        &kp P         &kp G         &kp J &kp L         &kp U        &kp Y        &kp SEMI      &kp BSPC
+   &kp LCTRL &hm LSHIFT A  &hm LCTRL R  &hm LALT S   &hm LGUI T    &kp D         &kp H &hm RGUI N    &hm RALT E   &hm RCTRL I  &hm RSHIFT O  &kp SQT
+   &kp LSHFT &kp Z         &kp X        &kp C        &kp V         &kp B         &kp K &kp M         &kp COMMA    &kp DOT      &kp FSLH      &kp ESC
+                                        &kp LGUI     &mo 1         &kp SPACE     &kp RET  &mo 2 &kp RALT
             >;
         };
 
