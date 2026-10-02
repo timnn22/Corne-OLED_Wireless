@@ -21,12 +21,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Colemak + HRM
+            // Colemak + HRM + Thumb keys mới
             bindings = <
    &kp ESC   &kp Q         &kp W        &kp F        &kp P         &kp G         &kp J &kp L         &kp U        &kp Y        &kp SEMI      &kp GRAVE
    &kp TAB   &hm LSHIFT A  &hm LCTRL R  &hm LALT S   &hm LGUI T    &kp D         &kp H &hm RGUI N    &hm RALT E   &hm RCTRL I  &hm RSHIFT O  &kp SQT
    &kp LSHFT &kp Z         &kp X        &kp C        &kp V         &kp B         &kp K &kp M         &kp COMMA    &kp DOT      &kp FSLH      &kp BSPC
-                                        &kp LGUI     &kp RET       &mo 1         &mo 2 &kp SPACE     &kp RALT
+                                        &kp LGUI     &mo 1         &kp RET       &kp SPACE &mo 2     &kp RGUI
             >;
         };
 
